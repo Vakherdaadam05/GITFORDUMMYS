@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="GITFORDUMMYS.css">
+    <title>GITFORDUMMYS</title>
+</head>
+<body>
+    <h1 Align=center>GIT első lépések</h1>
+<p>1. Telepítés: https://git-scm.com/download/win
+Minden lépés tovább, a Git Basht telepítsük fel, saját munkánkat könnyíti meg.</p>
+
+<p>2. C, vagy D meghajtó gyökerében dolgozzunk, egyszerűsödik a munkánk.</p>
+
+<p>3. Regisztráció a GitHub.com oldalon (iskolai e-mail címmel regisztráljunk)</p>
+
+<p>4. Hozzunk létre egy repository-t, egyszerű névvel.</p>
+
+<p>5. Azonosítás beállítása, szükséges a Github pontos kapcsolathoz
+<ul>
+<li>a. git config --global user.name "Github-on megadott név"</li>
+
+<li>b. git config --global user.email "Github-on regisztrált emailcím"</li>
+</ul></p>
+
+<p>6. Hozzunk létre a lokális mappánkba egy repositoryt.
+<ul>
+<li>a. mkdir repository-name</li>
+<li>b. cd repository-name</li>
+<li>c. git init</li>
+(a mappa létrehozást csinálhatjuk windows alól is természetesen)</ul></p>
+<p>7. Távoli kapcsolat beállítása a későbbi feltöltéshez
+<ul>
+    <li>a. # új origin nevű távoli kapcsolat beállítása</li>
+    <li>b. git remote add origin repository-link (github-ból code-ból</li>
+elérhető a közvetlen link)
+<li>>c. # távoli kapcsolatok lekérdezése</li>
+<li>d. git remote -v</li>
+<li>e. # origin nevű távoli kapcsolat frissítése</li>
+<li>f. git fetch origin</li>
+<li>g. # minden branch lekérdezése</li>
+<li>h. git branch –a</li>
+</ul></p>
+
+<p>8. Hozzunk létre egy fájlt a lokális munkamappába (windowsban könnyebb)</p>
+
+<p>9. Adjuk hozzá a fájlt az átmenetei tárolóhoz (stage)
+Egyetlen fájl hozzáadása a staging area-hoz:
+a. git add file-name
+Minden az aktuális mappában, vagy annak almappáiban található fájl hozzáadása a
+staging area-hoz:
+a. git add .
+<ul>
+<li>i. Piros: azon fájlok, amik nem kerültek be a staging-area-ba</li>
+
+<li>ii. Zöld: azon fájlok, amik berültek a staging-area-ba</li>
+</ul></p>
+
+<p>10. Státusz lekérdezése
+<ul>
+<li>a. git status</li></ul></p>
+
+<p>11. Átmeneti tárolóból a repoba való áttöltés (kommitálunk)
+    <ul>
+<li>a. leíró szöveg megadása parancssori argumentummal</li>
+<li>b. git commit -m "Kötelező megjegyzést tenni"</li>
+</ul></p>
+
+<p>12. Eddigi verzió megtekintése
+a. git log
+i. Minden egyes bejegyzéshez a következőhöz hasonlót fogunk látni:
+commit a661d9249509f8aa8f81f6f58129d57eb36b81d6
+Author: Gergo Roth <roth@dcs.uni-pannon.hu>
+Date: Wed Jul 6 18:36:01 2016 +0200
+My first commit.
+ii. A "commit" után szereplő szám egy hash érték, ami a fájlokból kerül generálásra.
+iii. Az "Author:" után szerepel a változtatás végrehajtójának a neve és e-mail címe.
+iv. A "Date:" után szerepel a módosítás végrehajtásának dátuma.
+v. Minden alatta levő szöveg a következő bejegyzésig a commit leírása.</p>
+
+<p>13. Fájl és verzió feltöltése távoli tárhelyre
+
+a. git remote –v (kapcsolatot ellenőrizzük)
+b. git push origin master</p>
+
+<p>14. Távoli tárhely adatainak letöltése, helyi verzió frissítése</p>
+
+<p>15. git pull origin master</p>
+
+<a href="GITFORDUMMYS.html"><img src="vissza.jpg"></a>
+    
+</body>
+</html>
